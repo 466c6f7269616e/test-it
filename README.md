@@ -41,6 +41,25 @@ L'API sera accessible sur http://localhost:8080
 
 H2 Console : http://localhost:8080/h2-console
 
+## TD
+
+1. réaliser un test de service unitaire
+   - Tester les méthodes métier de TaskService
+   - Tester les règles de transition d'état des tâches
+   - Tester les cas d'erreur (exceptions métier)
+2. réaliser un test de repository
+   - Tester les opérations CRUD du TaskRepository
+   - Tester la persistance des données
+   - Tester les requêtes personnalisées
+3. Réaliser un test de service IT
+   - Tester l'intégration du TaskService avec les repositories
+   - Tester l'interaction avec les adapters (mail, utilisateur)
+   - Tester avec la base de données réelle
+4. Réaliser un test de controller
+   - Tester les endpoints REST du TaskController
+   - Tester la validation des requêtes
+   - Tester les réponses HTTP et la gestion des erreurs
+
 ## Tests
 Les étudiants doivent écrire des tests unitaires pour vérifier :
 - Les règles métier (voir TaskServiceTest.java pour exemples)
