@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 
 public class Task {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
@@ -50,4 +50,16 @@ public class Task {
 
     public User getRequester() { return requester; }
     public void setRequester(User requester) { this.requester = requester; }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                ", assignedUser=" + assignedUser +
+                ", requester=" + requester +
+                '}';
+    }
 }
