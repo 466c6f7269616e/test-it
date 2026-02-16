@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 public class MailServiceFake implements MailService {
 
-    private static final Logger logger = LoggerFactory.getLogger(MailServiceFake.class);
+    public static final Logger logger = LoggerFactory.getLogger(MailServiceFake.class);
 
     @Override
     public void sendMail(User user, String subject, String message) {
